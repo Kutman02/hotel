@@ -1,0 +1,243 @@
+
+.contact {
+  background-color: #f5f8fa;
+}
+
+.contact-title {
+  color: #1c2331;
+}
+
+.contact-label {
+  color: #1c2331;
+}
+
+.contact-link {
+  color: #f5f8fc;
+}
+
+.contact-icon {
+  color: #007bff;
+}
+
+
+
+
+
+
+
+
+
+
+body {
+	margin: 0;
+	padding: 0;
+  animation: both;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.hotel-name{
+  color: #fff;
+  animation: both;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header {
+	background-color: #006AFF;
+	color: #fff;
+	padding: 20px;
+}
+.www{
+width: 200px;
+border: #00B2FF;
+font-size: 20px;
+}
+header h1 {
+	margin: 0;
+	font-size: 20px;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav li {
+	margin-right: 20px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+main {
+	padding: 30px;
+}
+
+section {
+	margin-bottom: 30px;
+}
+
+section h2 {
+	margin-top: 0;
+	font-size: 20px;
+}
+
+.rooms {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.room {
+	flex: 1 1 300px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.room:last-child {
+	margin-right: 0;
+}
+
+.room h3 {
+	margin-top: 10px;
+	font-size: 20px;
+}
+
+.room p {
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+
+menu{
+  position: relative;
+  display: inline-block;
+  border: none;
+  background-color: #006AFF;
+  color: #fff;
+  padding: 16px 32px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  overflow: hidden;
+
+}
+menu span{
+  position: relative;
+  z-index: 2;
+
+}
+menu ::before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: black;
+  opacity: 0;
+  transition: opacity 0.3s, width 0.3s, height 0.3s;
+  background-image: url(bg24.gif);
+
+}
+menu :hover ::before{
+  opacity: 0.5;
+  width: 200%;
+  height: 200%;
+
+}
+menu :hover::after {
+  transform: skewY(-30deg) scale(1);
+}
+
+.fire-button {
+  position: relative;
+  display: inline-block;
+  border: none;
+  background-color: #006AFF;
+  color: #fff;
+  padding: 16px 32px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+
+.fire-button span {
+  position: relative;
+  z-index: 2;
+
+}
+
+.fire-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: black;
+  opacity: 0;
+  transition: opacity 0.3s, width 0.3s, height 0.3s;
+  background-image: url(bg24.gif);
+}
+
+.fire-button::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 100%;
+  height: 200%;
+  background-color: #00B2FF;
+  transform: skewY(-30deg) scale(0);
+  transition: transform 0.3s;
+  background-image: url(bg24.gif);
+}
+
+.fire-button:hover::before {
+  opacity: 0.5;
+  width: 200%;
+  height: 200%;
+}
+
+.fire-button:hover::after {
+  transform: skewY(-30deg) scale(1);
+}
+
+footer{
+  background-color: #006AFF; padding: 10px; text-align: center;
+
+}
+.footer_text{
+  font-size: 14px; color: #fff;
+}
+
+/* стили для десктопных устройств */
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* стили для планшетов */
+@media (max-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+/* стили для мобильных устройств */
+@media (max-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
